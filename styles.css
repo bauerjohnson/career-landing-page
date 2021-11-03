@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+    color:lightblue;
+}
+
+body {
+    background: url(./short-gif/bgg.png) no-repeat;
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    width: 100%;
+}
+
+.headerNimg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    
+}
+
+.nav-links {
+    list-style: none;
+}
+
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+li .nav-link{
+  font-weight: 500;
+  font-size: 16px;
+  color: wheat;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#name-header {
+    color: lightblue;
+    font-size: 20px;
+}
+
+
+.nav-links li .nav-link {
+ transition: all 0.3s ease 0s;
+}
+
+
+/* first section */
+#success {
+  
+    margin-bottom: 50px;
+  
+}
+
+.image-div {
+    display: flex;
+    justify-content: center;
+    padding: 3% 0;
+    
+    
+    
+}
+
+.success-header {
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.word {
+    padding: 0 5%;
+}
+
+
+
+h4{
+   
+    text-transform: capitalize;
+    color: red;
+    font-size: 20px;
+   
+}
+
+.meaning {
+    color: white;
+    font-size: 16px;
+}
+
+
+
+/* second section */
+#plans {
+    display: flex;
+ flex-direction: column;
+    text-align: center;
+}
+
+.header-text {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: wheat
+}
+
+#form  {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-transform: capitalize;
+    font-size: 10px;
+}
+
+input {
+    width: 50%;
+    padding: 1%;
+    text-align: center;
+    align-self: center;
+}
+
+#submit {
+    cursor: pointer;
+}
+
+/* third section */
+
+#goals {
+    margin: 4% 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* fourth section */
+#books {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+  padding: 5% 20%;
+    
+}
+
+#buybook {
+    width: 50%;
+}
+
+button{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    background: lightblue;
+    font-family: 'Ceviche One', cursive;
+    color: black;
+    margin-left: 20%;
+}
+
+
+/* footer section */
+
+footer {
+    background-color: white;
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  padding: 20px;
+  
+
+
+}
+
+.foot ul li {
+    color: red;
+    list-style: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 5px;
+    text-transform: capitalize;
+}
+
+.foot span {
+   color:darkmagenta;
+   font-weight: 600;
+}
+
+
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+}
+
+html.transition .transition-fade {
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+   
+      
+    .image-div {
+        display: flex;
+        flex-direction: column; 
+        padding-top: 30%;
+    }
+
+
+   .image-div img {
+      max-width: 100%;
+      width: 30%;
+   }
+
+   .meaning {
+       text-align: center;
+   }
+
+    #books {
+        margin: 50px 0;
+        flex-direction: column; 
+        align-self: center;
+         
+    }
+
+    .firstbook, .secondbook, .thirdbook {
+        padding: 20px;
+    }
+
+    button{
+        padding: 0;
+        margin: auto;
+    }
+    
+
+    footer{
+        max-width: 100%;
+        justify-content: flex-start;
+    }
+
+   
+  }

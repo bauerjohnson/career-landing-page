@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <style>
+        @media (max-width: 350px){
+            .image-div {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product-landing-page</title>
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>  
+    <script defer src="/script.js"></script>
+</head>
+<body>
+    <main id="swup" class="transition-fade">
+    <header id="header">
+<div class="headerNimg">
+<img id="header-img" src="https://cdn2.iconfinder.com/data/icons/travel-522/70/Untitled-2-16-50.png" >
+  <h3 id="name-header">creator mindset</h3>
+  </div>
+   <nav id="nav-bar">
+      <ul class="nav-links">
+   <li>  <a class="nav-link" href='#plans'> plans </a></li>
+  <li>  <a class="nav-link" href='#goals'> goals </a></li>
+  <li>  <a class="nav-link" href='#books'> books</a></li>
+      </ul>
+   </nav>
+ </header>
+
+<section id="success">
+<h3 class="success-header">Three factors that influence sucess</h3>
+<div class="image-div">
+    <img src="./icons/visual.png" id="moti" alt="">
+    <div class="word">
+    <h4>visualisation</h4>
+<p class="meaning"> This is the critical step to success. ...</p>
+</div>
+</div>
+<div class="image-div">
+    <img src="./icons/believe.png" id="moti" alt="">
+    <div class="word">
+    <h4>believe</h4><br>
+    <p class="meaning">Believe is what transform the vision into a reality and the self-confidence that we can get it done. ...</p>
+</div>
+</div>
+<div class="image-div">
+    <img src="./icons/actions.png" id='moti' alt="">
+    <div class="word">
+    <h4>action</h4>
+    <p class="meaning">This factor is decisive because it will determine if you achieve your goals.</p>
+</div>
+</div>
+
+
+
+</section>
+
+ 
+ <section id="plans">
+     <p class="header-text"> The time to start is now</p>
+     <form action="https://www.freecodecamp.com/email-submit" id="form">
+         <label for="name" id="name">name</label>
+         <input type="text">
+         <label for="email" >email</label>
+         <input type="email" id="email" placeholder="email" name="email" >
+         <label for="word" id="occupation">occupation</label>
+         <input type="text">
+         <label for="word" id="plans">plans</label>
+         <input type="text">
+        <input type="submit" id="submit">
+     </form>
+ </section>
+ <section id="goals">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rGPAEjAZB5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+ </section>
+
+
+ 
+ <section id="books">
+<div class="firstbook">
+    <img src="./books/self-improvement.jpg" alt=""id="buybook">
+    <button>order now</button>
+</div>
+<div class="secondbook">
+    <img src="./books/si2.jpg" alt="" id="buybook">
+    <button>order now</button>
+</div>
+<div class="thirdbook">
+<img src="./books/si3.jpg" alt="" id="buybook">
+<button>order now</button>
+</div>
+ </section>
+
+
+ <footer>
+     
+     <div class="foot">
+        <!-- <div>1</div>
+        <div>2</div> -->
+         <ul>
+            <li>privacy</li>
+            <li>terms</li>
+            <li>contact</li>
+         </ul>
+
+ <span>&copy;2022,bauerjohnson</span>
+     </div>
+ </footer>
+</body>
+</main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- <main id="swup" class="transition-fade"></main> -->
+</html>
